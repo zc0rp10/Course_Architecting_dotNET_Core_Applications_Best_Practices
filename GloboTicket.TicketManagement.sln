@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{57BBFD32-EF49-4A96-9ACE-B8EA464448A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CDEDE51A-29AF-4475-9F8B-290D7E9859B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{3DCEE3E4-20FD-4DB0-8E75-C4B64F4F601D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{00B18F07-41CA-4A31-9D18-C36FB84ED8BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{3C356712-9793-4788-B4A5-376D131ABBCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{74BE4C1B-727A-42A1-B0B1-52D234A931E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Domain", "GloboTicket.TicketManagement.Domain\GloboTicket.TicketManagement.Domain.csproj", "{DE13A255-0F74-48E9-B70D-0A5D2698EEFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3DCEE3E4-20FD-4DB0-8E75-C4B64F4F601D} = {57BBFD32-EF49-4A96-9ACE-B8EA464448A9}
+		{00B18F07-41CA-4A31-9D18-C36FB84ED8BC} = {57BBFD32-EF49-4A96-9ACE-B8EA464448A9}
+		{3C356712-9793-4788-B4A5-376D131ABBCC} = {57BBFD32-EF49-4A96-9ACE-B8EA464448A9}
+		{74BE4C1B-727A-42A1-B0B1-52D234A931E6} = {57BBFD32-EF49-4A96-9ACE-B8EA464448A9}
+		{DE13A255-0F74-48E9-B70D-0A5D2698EEFF} = {00B18F07-41CA-4A31-9D18-C36FB84ED8BC}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE13A255-0F74-48E9-B70D-0A5D2698EEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE13A255-0F74-48E9-B70D-0A5D2698EEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE13A255-0F74-48E9-B70D-0A5D2698EEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE13A255-0F74-48E9-B70D-0A5D2698EEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
