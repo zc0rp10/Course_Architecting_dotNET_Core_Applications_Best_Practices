@@ -5,3 +5,4 @@
 * Follows Clean Architecture Principles
 * MediaR - CQRS
 * AutoMapper
+* Fluent Validation
