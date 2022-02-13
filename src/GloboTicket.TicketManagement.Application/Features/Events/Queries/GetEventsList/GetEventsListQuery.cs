@@ -4,5 +4,4 @@ namespace GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEv
 
 public class GetEventsListQuery : IRequest<List<EventListVm>>
 {
-    
 }

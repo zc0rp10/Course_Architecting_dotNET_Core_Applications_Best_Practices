@@ -7,7 +7,7 @@ namespace GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEv
 
 public class GetEventsListQueryHandler : IRequestHandler<GetEventsListQuery, List<EventListVm>>
 {
-    private readonly IMapper _mapper; 
+    private readonly IMapper _mapper;
     private readonly IAsyncRepository<Event> _eventRepository;
 
     public GetEventsListQueryHandler(IMapper mapper, IAsyncRepository<Event> eventRepository)
@@ -15,10 +15,13 @@ public class GetEventsListQueryHandler : IRequestHandler<GetEventsListQuery, Lis
         _mapper = mapper;
         _eventRepository = eventRepository;
     }
-    
+
     public async Task<List<EventListVm>> Handle(GetEventsListQuery request, CancellationToken cancellationToken)
     {
-        var allEvents = (await _eventRepository.ListAllAsync()).OrderBy(e => e.Date);
+        var allEvents =
+            (await _eventRepository.ListAllAsync())
+            .OrderBy(e => e.Date);
+
         return _mapper.Map<List<EventListVm>>(allEvents);
     }
 }

@@ -11,7 +11,8 @@ public class GetEventDetailQueryHandler : IRequestHandler<GetEventDetailQuery, E
     private readonly IAsyncRepository<Event> _eventRepository;
     private readonly IAsyncRepository<Category> _categoryRepository;
 
-    public GetEventDetailQueryHandler(IMapper mapper, IAsyncRepository<Event> eventRepository, IAsyncRepository<Category> categoryRepository)
+    public GetEventDetailQueryHandler(IMapper mapper, IAsyncRepository<Event> eventRepository,
+        IAsyncRepository<Category> categoryRepository)
     {
         _mapper = mapper;
         _eventRepository = eventRepository;

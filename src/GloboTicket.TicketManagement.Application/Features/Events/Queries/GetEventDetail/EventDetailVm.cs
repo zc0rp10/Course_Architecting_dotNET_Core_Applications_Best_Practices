@@ -11,4 +11,4 @@ public class EventDetailVm
     public string ImageUrl { get; set; }
     public Guid CategoryId { get; set; }
     public CategoryDto Category { get; set; }
-} 
+}
