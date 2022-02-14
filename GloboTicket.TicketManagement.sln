@@ -4,9 +4,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{81F0766F-79E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3950BCE8-B2F2-453E-8041-D1A6E948D8C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Domain", "src\GloboTicket.TicketManagement.Domain\GloboTicket.TicketManagement.Domain.csproj", "{46822F21-53A9-42F8-A282-E8F694F8D28C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C5F96300-C638-48E8-BCF6-196C8685278C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Application", "src\GloboTicket.TicketManagement.Application\GloboTicket.TicketManagement.Application.csproj", "{B49A48DC-6708-4B52-889E-98BA7FDDC924}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{96D08CE0-8966-41CA-9D1B-EEE683897FB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{D49E28E6-0F79-410F-AB5A-C02A12A65C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Application", "src\Core\GloboTicket.TicketManagement.Application\GloboTicket.TicketManagement.Application.csproj", "{2D0456F6-E8AF-4A14-8351-337FDED6AC4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Domain", "src\Core\GloboTicket.TicketManagement.Domain\GloboTicket.TicketManagement.Domain.csproj", "{74D37012-45E9-450F-AD62-A682C6A47B93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Persistence", "src\Infrastructure\GloboTicket.TicketManagement.Persistence\GloboTicket.TicketManagement.Persistence.csproj", "{BC5E3D2A-C4BE-4DB4-9C36-49B571FF7F41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,17 +22,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{46822F21-53A9-42F8-A282-E8F694F8D28C} = {81F0766F-79E6-47FE-B065-6766DC510C0B}
-		{B49A48DC-6708-4B52-889E-98BA7FDDC924} = {81F0766F-79E6-47FE-B065-6766DC510C0B}
+		{C5F96300-C638-48E8-BCF6-196C8685278C} = {81F0766F-79E6-47FE-B065-6766DC510C0B}
+		{96D08CE0-8966-41CA-9D1B-EEE683897FB1} = {81F0766F-79E6-47FE-B065-6766DC510C0B}
+		{D49E28E6-0F79-410F-AB5A-C02A12A65C82} = {81F0766F-79E6-47FE-B065-6766DC510C0B}
+		{2D0456F6-E8AF-4A14-8351-337FDED6AC4B} = {C5F96300-C638-48E8-BCF6-196C8685278C}
+		{74D37012-45E9-450F-AD62-A682C6A47B93} = {C5F96300-C638-48E8-BCF6-196C8685278C}
+		{BC5E3D2A-C4BE-4DB4-9C36-49B571FF7F41} = {96D08CE0-8966-41CA-9D1B-EEE683897FB1}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{46822F21-53A9-42F8-A282-E8F694F8D28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46822F21-53A9-42F8-A282-E8F694F8D28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46822F21-53A9-42F8-A282-E8F694F8D28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46822F21-53A9-42F8-A282-E8F694F8D28C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B49A48DC-6708-4B52-889E-98BA7FDDC924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B49A48DC-6708-4B52-889E-98BA7FDDC924}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B49A48DC-6708-4B52-889E-98BA7FDDC924}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B49A48DC-6708-4B52-889E-98BA7FDDC924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D0456F6-E8AF-4A14-8351-337FDED6AC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0456F6-E8AF-4A14-8351-337FDED6AC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0456F6-E8AF-4A14-8351-337FDED6AC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0456F6-E8AF-4A14-8351-337FDED6AC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D37012-45E9-450F-AD62-A682C6A47B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D37012-45E9-450F-AD62-A682C6A47B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D37012-45E9-450F-AD62-A682C6A47B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D37012-45E9-450F-AD62-A682C6A47B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC5E3D2A-C4BE-4DB4-9C36-49B571FF7F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5E3D2A-C4BE-4DB4-9C36-49B571FF7F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5E3D2A-C4BE-4DB4-9C36-49B571FF7F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC5E3D2A-C4BE-4DB4-9C36-49B571FF7F41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

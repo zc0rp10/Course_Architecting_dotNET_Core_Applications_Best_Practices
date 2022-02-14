@@ -1,4 +1,4 @@
-namespace GloboTicket.TicketManagement.Domain.Entities;
+namespace GloboTicket.TicketManagement.Domain.Common;
 
 public class AuditableEntity
 {
